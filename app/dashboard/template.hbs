@@ -1,5 +1,11 @@
 <h2>Dashboard</h2>
 
-<p>Peter Parker is Spider-Man</p>
+<div>
+  <h3>Your Stores</h3>
+  {{#each model as |store|}}
+    {{store.name}}
+  {{/each}}
+
+</div>
 
 <a href="#" {{action 'logout'}}>Logout</a>
